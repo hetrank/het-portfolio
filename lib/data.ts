@@ -3,7 +3,8 @@ export const projects = [
     title: "PULL-PANDA",
     subtitle: "AI GitHub PR Review Agent",
     description:
-      "An AI-powered system that automatically reviews GitHub pull requests and provides context-aware feedback using LLMs, static analysis, and retrieval augmented generation.",
+    "An AI system that automatically reviews GitHub pull requests and provides structured feedback using LLM reasoning and static code analysis, reducing manual review effort and improving code quality."
+    ,
     tech: ["Python", "FastAPI", "Next.js", "RAG", "Pinecone", "Semgrep"],
     github: "https://github.com/hetrank",
     demo: "#",
@@ -12,7 +13,8 @@ export const projects = [
     title: "Tat-Rakshak",
     subtitle: "AI Coastal Threat Alert System",
     description:
-      "A full-stack platform that analyzes satellite and environmental data to detect anomalies and forecast coastal threats, generating real-time alerts and monitoring dashboards.",
+    "A full-stack platform that analyzes satellite and environmental data to detect anomalies and forecast coastal threats, generating early alerts and monitoring dashboards for communities and authorities."
+    ,
     tech: ["Python", "Node.js", "MongoDB", "ML", "Forecasting"],
     github: "https://github.com/hetrank",
     demo: "#",
@@ -21,7 +23,8 @@ export const projects = [
     title: "Farmer Assistance Platform",
     subtitle: "Agriculture Support Web System",
     description:
-      "A responsive web platform built to help farmers make crop decisions using soil health, irrigation efficiency, and crop cycle analysis collected from on-ground agricultural research.",
+    "A web-based decision support system developed after on-ground farm research to help farmers choose suitable crops and optimize irrigation based on soil health and environmental factors."
+    ,
     tech: ["React", "Node.js", "Data Analysis", "Web Platform"],
     github: "https://github.com/hetrank",
     demo: "#",

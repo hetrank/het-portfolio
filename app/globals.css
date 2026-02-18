@@ -6,11 +6,13 @@
 
 /* Smooth scrolling */
 html {
+  background: #000;
   scroll-behavior: smooth;
 }
 
 /* Better text rendering */
 body {
+  background-color: #020617;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
