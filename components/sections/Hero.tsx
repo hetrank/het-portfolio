@@ -9,7 +9,7 @@ import Image from "next/image";
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center text-center px-6">
-      <div className="max-w-3xl">
+      <div className="max-w-3xl mt-18">
 
         {/* Small Intro */}
         <motion.p
@@ -30,6 +30,10 @@ export default function Hero() {
         >
           Het Rank
         </motion.h1>
+        
+        <p className="text-gray-400 mt-4 mb-4">
+          Computer Science Undergraduate • Full-Stack & AI Systems Builder
+        </p>
 
         {/* Tagline */}
         <motion.h2
@@ -55,25 +59,32 @@ export default function Hero() {
           />
 
           <div className="flex justify-center mt-10 mb-10">
-            <div className="relative w-40 h-40 md:w-48 md:h-48 transition-transform duration-500 hover:scale-105">
-              {/* Glow ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/30 to-cyan-400/40 blur-2xl"></div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.85, y: 30 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="flex justify-center mt-10 mb-10"
+            >
+              <div className="relative w-40 h-40 md:w-48 md:h-48 transition-transform duration-500 hover:scale-105">
+                {/* Glow ring */}
+                <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/40 via-purple-500/30 to-cyan-400/40 blur-2xl"></div>
 
-              {/* Avatar frame */}
-              <div className="relative rounded-full p-[3px] bg-gradient-to-tr from-blue-500 via-purple-500 to-cyan-400">
-                <div className="rounded-full bg-[#020617] p-1">
-                  <Image
-                    src="/avatar.png"
-                    alt="Het Rank avatar"
-                    width={300}
-                    height={300}
-                    className="rounded-full object-cover"
-                    priority
-                  />
+                {/* Avatar frame */}
+                <div className="relative rounded-full p-[3px] bg-gradient-to-tr from-blue-500 via-purple-500 to-cyan-400">
+                  <div className="rounded-full bg-[#020617] p-1">
+                    <Image
+                      src="/avatar.png"
+                      alt="Het Rank avatar"
+                      width={300}
+                      height={300}
+                      className="rounded-full object-cover"
+                      priority
+                    />
+                  </div>
                 </div>
-              </div>
 
-            </div>
+              </div>
+            </motion.div>
           </div>
 
         </motion.h2>

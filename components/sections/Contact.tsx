@@ -54,7 +54,7 @@ export default function Contact() {
             required
             className="w-full p-4 rounded-xl bg-white/5 border border-white/10 focus:border-white/30 outline-none"
           />
-
+          
           <input
             type="email"
             name="user_email"
